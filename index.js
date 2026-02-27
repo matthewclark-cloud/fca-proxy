@@ -66,6 +66,8 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  console.log(`Fetching FCA: /services/V0.1${fcaPath}`);
+
   const options = {
     hostname: FCA_BASE,
     path: '/services/V0.1' + fcaPath,
